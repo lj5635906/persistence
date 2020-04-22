@@ -1,0 +1,11 @@
+<mapper namespace="site.luojie.dao.IUserDao">
+
+    <select id="findUserByCondition" resultType="site.luojie.pojo.User" parameterType="site.luojie.pojo.User">
+        select * from USERS where USER_ID = #{USER_ID} and USER_NAME = #{USER_NAME}
+    </select>
+
+    <select id="findAll" resultType="site.luojie.pojo.User">
+        select * from USERS
+    </select>
+
+</mapper>
